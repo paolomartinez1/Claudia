@@ -2,330 +2,290 @@
 
 > Perfil analisado: [instagram.com/dra.anaclaudiasiqueira](https://www.instagram.com/dra.anaclaudiasiqueira/)
 > Nicho: climatério, menopausa e envelhecimento saudável (mulheres 40+)
-> Data da análise: outubro de 2026
-> Documento complementar: [ginecologistas-instagram-engajamento.md](./ginecologistas-instagram-engajamento.md)
+> **Dados coletados direto do Instagram em 15/10/2026** (navegador logado, somente leitura)
+> Dados brutos: [`dados/posts-coletados.csv`](./dados/posts-coletados.csv) (70 posts, 5 perfis)
+> Guia geral do nicho: [ginecologistas-instagram-engajamento.md](./ginecologistas-instagram-engajamento.md)
 
 ---
 
-## 0. Transparência: o que foi possível medir
+## 0. Metodologia
 
-| Dado | Situação | Como foi obtido |
-|---|---|---|
-| Seguidores e número de publicações (dela e de concorrentes) | ✅ Coletado | Prévias públicas dos perfis indexadas em buscadores. Os números são aproximados e podem estar defasados em algumas semanas. |
-| Bio, posicionamento, CRM/RQE, canais (YouTube, site, Linktree, e-book) | ✅ Coletado | Prévias públicas do Instagram, site, YouTube e Linktree |
-| Inscritos no YouTube | ✅ Coletado (aprox.) | Dados estruturados da página do canal |
-| **Curtidas, comentários, visualizações e datas de cada post** | ❌ **Não coletado** | O Instagram não fica acessível sem login a partir do ambiente de análise, e as plataformas de métricas (HypeAuditor, Heepsy, Ninjalitics) não tinham página pública deste perfil. |
-| Alcance, salvamentos, envios, horários de pico e dados demográficos | ❌ Só pelo Insights da própria conta | Dado privado |
-
-**Consequência:** a análise de **nível de perfil** (tamanho, posicionamento, eficiência, funil e concorrência) está completa e se baseia em números reais. A análise de **nível de post** (qual tema e formato engaja mais nela e nos concorrentes) aparece aqui como **hipótese e método**. A seção 6 traz a planilha pronta ([`dados/auditoria-posts-template.csv`](./dados/auditoria-posts-template.csv)) para preencher em cerca de 1 hora com os últimos 30 posts dela e de 3 concorrentes. Com isso, as hipóteses viram números.
-
----
-
-## 1. Raio-X do perfil
-
-| Item | Situação atual |
+| Item | Detalhe |
 |---|---|
-| **Nome no perfil** | Ana Claudia Siqueira – Ginecologista |
-| **Seguidores (Instagram)** | **~97 mil** |
-| **Publicações** | **~1.297** |
-| **Seguidores por publicação** | **~75** (indicador de eficiência histórica, ver seção 3) |
-| **Posicionamento da bio** | Climatério, menopausa e envelhecimento saudável |
-| **Credenciais na bio** | CRM-RS 24299 · RQE 14924 ✅ (conforme a Res. CFM 2.336/2023) |
-| **Atendimento** | Presencial em Porto Alegre (Av. Independência) e **online**, o que dá alcance nacional |
-| **YouTube** | Canal próprio, **~19,4 mil inscritos**, foco em "equilíbrio e qualidade de vida para mulheres 40+" |
-| **Site** | draanaclaudiasiqueira.com.br, com blog e página de terapia hormonal |
-| **Isca digital** | **E-book** "como identificar sinais do climatério e menopausa" (via Linktree) |
-| **Outros canais** | Facebook (/draanaclaudiasiqueira), Linktree |
-| **Trajetória** | Formada pela UPF (1998). Atuou 20 anos em obstetrícia e migrou para fisiologia hormonal, reposição hormonal e menopausa. |
-| **Atenção (homônima)** | Existe outra médica, **Dra. Ana Claudia Santiago Siqueira**, ginecologista em Montenegro/RS. Isso pode confundir buscas no Google e na Doctoralia. Ver ação na seção 7. |
-
-### Leitura rápida
-
-- **Ela já é grande no nicho.** Com cerca de 97 mil seguidores, está entre as 2 maiores do levantamento de ginecologistas brasileiras focadas em menopausa (seção 2).
-- **O funil está montado:** e-book, site com blog, YouTube e consulta online. Muitos concorrentes não têm isso.
-- **A história pessoal é um ativo pouco explorado:** "20 anos fazendo partos, e agora cuido da mulher que vem depois" é um enredo forte para Reels e para imprensa.
+| **Dra. Ana Claudia** | Últimos **30 posts** (25/08 a 14/10/2026), mais 1 Reel de agosto e 2 fixados antigos, com curtidas, comentários, envios (quando exibidos), visualizações de Reels, data/hora e tema. Comentários lidos nos posts de maior engajamento. |
+| **Concorrentes** | Dr. Igor Padovesi, Dra. Caroline Alonso, Dra. Carolina Arrabal e Dra. Thatìanê Nacif: os 8 a 10 posts mais recentes de cada um, mais os Reels virais fixados, e visualizações dos últimos Reels pela aba Reels. |
+| **Engajamento** | Interações = curtidas + comentários. Taxa = interações ÷ seguidores. Comparação sempre pela **mediana** (os virais fixados ficam de fora). |
+| **Limites** | Salvamentos, alcance e envios de carrosséis são privados e só aparecem no Insights da própria conta. A amostra dos concorrentes é menor (8–10 posts). Os horários estão em Brasília (UTC−3). |
 
 ---
 
-## 2. Benchmark: médicas do mesmo nicho
+## 1. Resumo executivo
 
-Os perfis abaixo são de ginecologistas brasileiras cuja bio declara foco em **menopausa, climatério e/ou terapia hormonal**. Os números são aproximados e vêm de prévias públicas indexadas.
+1. **Ela é maior do que parecia.** São **126 mil seguidores** e 1.526 posts (o dado de busca que usei antes, 97 mil, estava defasado). Os concorrentes diretos também cresceram: Igor Padovesi tem 169 mil, Caroline Alonso 159 mil, Carolina Arrabal 128 mil e Thatìanê Nacif 119 mil.
+2. **Ela tem o melhor engajamento entre as médicas do nicho.** Fica em cerca de **124 interações por post (0,098%)**, à frente de Arrabal (118, 0,093%), Caroline Alonso (42, 0,027%) e Nacif (34, 0,029%). **O público dela é o mais vivo**, mesmo com menos seguidores que Alonso.
+3. **O problema é alcance, não engajamento.** A mediana dos Reels dela é de cerca de **7,1 mil visualizações (5,7% da base)**. Arrabal chega a cerca de 16 mil (12,7%) e Igor a cerca de 12,6 mil (7,5%).
+4. **Falta um viral.** Todos os concorrentes têm pelo menos um Reel de 500 mil a 1,2 milhão de visualizações, que fixaram no perfil. O maior dela tem **26 mil**.
+5. **Os vencedores dela são pessoais e técnicos sobre terapia hormonal. Os perdedores são carrosséis de sintomas genéricos, datas comemorativas e posts às 18h.**
+   - O post mais forte é um Reel pessoal ("tenho dificuldade de desacelerar"), com **4,9× a mediana**.
+   - Os carrosséis postados às 18h têm mediana de **70 interações**, contra **175** dos postados ao meio-dia.
 
-| # | Perfil | Local | Seguidores | Posts | Seg./post | Posicionamento declarado |
+---
+
+## 2. Raio-X do perfil (15/10/2026)
+
+| Item | Situação |
+|---|---|
+| Seguidores / seguindo / posts | **126 mil** / 960 / **1.526** |
+| Bio | "Médica – Cuidando de mulheres. Climatério – Menopausa – Envelhecimento saudável. Ginecologista CRM RS24299 RQE14924" + linktr.ee |
+| Destaques | E-book · TRH · 40+ · Comece aqui! · Rotas hormonais · Libido X ACO · Regenerativa · Coletores |
+| Fixados | 2 posts antigos + Reel "cafezinho preto" (2023, 26,4 mil visualizações) e "mulheres mudam de uma hora para outra" (2024, 18,9 mil) |
+| Ritmo | **31 posts em 51 dias, cerca de 4,2 por semana** |
+| Mix de formatos | **39% Reels** (12), **58% carrosséis** (18), 3% foto (1) |
+| Horários usados | Quase sempre **12h** (carrossel), **18h** (carrossel) e **19h–20h** (Reels) |
+| Collabs na amostra | **Nenhuma** |
+
+> **Correção do relatório anterior:** a "homônima" Dra. Ana Claudia *Santiago* Siqueira (Montenegro/RS) é, muito provavelmente, **ela mesma**. Uma seguidora comentou "Saudades da Dra. Montenegro RS" num post recente. A ação deixa de ser "se diferenciar" e passa a ser **unificar os cadastros antigos** (Doctoralia, catálogos) apontando para o perfil e o site atuais.
+
+---
+
+## 3. Benchmark com números reais
+
+### 3.1 Tamanho, engajamento e alcance
+
+| Perfil | Seguidores | Posts | Mediana de interações por post | Taxa (mediana) | Mediana de views dos Reels recentes | Views / seguidores |
+|---|---:|---:|---:|---:|---:|---:|
+| **Dra. Ana Claudia Siqueira** | **126 mil** | 1.526 | **124** | **0,098%** | **7,1 mil** | 5,7% |
+| Dr. Igor Padovesi (SP) | 169 mil | 2.134 | 519 *(n=3)* | 0,31% | 12,6 mil | 7,5% |
+| Dra. Caroline Alonso (RJ) | 159 mil | 1.394 | 42 | 0,027% | 1,0 mil | 0,7% |
+| Dra. Carolina Arrabal (SP) | 128 mil | 2.533 | 118 | 0,093% | 16,2 mil | 12,7% |
+| Dra. Thatìanê Nacif (SP/MG) | 119 mil | 2.946 | 34 | 0,029% | 2,6 mil | 2,2% |
+
+**Leitura:**
+- **Caroline Alonso e Thatìanê Nacif têm audiência grande mas "fria".** Os Reels recentes de Alonso ficam entre 600 e 2.000 visualizações, mesmo com 159 mil seguidores. Os perfis cresceram com um viral antigo e não retêm o público. Tamanho de base não garante alcance.
+- **Carolina Arrabal tem o maior alcance, mas parte dele parece pouco qualificada.** Exemplos: um Reel de humor ("Já aconteceu com você?") com **57,2 mil visualizações e só 187 curtidas (0,3%)**, e "dor na relação" com **19,7 mil visualizações e 80 curtidas**. Esse padrão é típico de impulsionamento ou de alcance fora do nicho. Já "a melhor reposição, mas uma rotina ruim atrapalha" teve **54 mil visualizações e 1,1 mil curtidas**: alcance com conversão.
+- **Igor Padovesi é o único que combina alcance e engajamento alto.** O melhor Reel recente dele é uma **collab** com outra médica sobre testosterona na menopausa: **51,9 mil visualizações, 1,5 mil curtidas, 95 comentários e 64 envios**.
+
+### 3.2 Os virais do nicho (o que faltou para ela)
+
+| Perfil | Reel | Views | Curtidas | Comentários | Gatilho |
+|---|---|---:|---:|---:|---|
+| Caroline Alonso | "As primeiras mudanças do climatério começam por volta dos 40" (abr/2025) | **1,2 mi** | 31,3 mil | 1,2 mil | **Identificação com sintomas (cansaço, irritabilidade, esgotamento) + idade específica**. Nos comentários: "Eu aos 45, exatamente assim", "To desse jeitinho". |
+| Carolina Arrabal | "Doutora, isso aqui é bom pra menopausa?" (fev/2026) | **864 mil** | 16,9 mil | 1,3 mil | **Formato pergunta de paciente / mito vs. verdade** |
+| Igor Padovesi | Palestras em congressos mundiais (jun/2024) | **722 mil** | 4,7 mil | 122 | Autoridade/conquista (muitas views, pouca interação) |
+| Thatìanê Nacif | "Academia não é só sobre estética!" (nov/2023) | **496 mil** | 24,3 mil | 445 | Longevidade e força, tema amplo e compartilhável |
+| Carolina Arrabal | EMT para ansiedade e insônia (jun/2026) | **249 mil** | 5,8 mil | 326 | Novidade/tratamento "sem dor" |
+| **Ana Claudia** | "Tu és adepta ao cafezinho preto pela manhã?" (nov/2023) | **26,4 mil** | 1,1 mil | 55 | Hábito cotidiano |
+
+**Padrão dos virais:** são vídeos curtos em que **a paciente se reconhece** ("sou eu"), com tema amplo o bastante para ser enviado a amigas de 40 a 55 anos. Três dos quatro maiores abrem com uma frase de **identificação** ou **pergunta de paciente**, e nenhum abre com termo técnico.
+
+---
+
+## 4. Comportamento dos posts dela (30 posts)
+
+### 4.1 Por formato
+
+| Formato | Posts | Mediana de interações | Índice vs. mediana geral (124) |
+|---|---:|---:|---:|
+| **Reel** | 12 | **183** | **1,47×** |
+| Carrossel | 18 | 100 | 0,81× |
+| Foto pessoal | 1 | 345 | 2,78× |
+
+**Os Reels rendem 83% mais que os carrosséis**, mas são só 39% do feed.
+
+### 4.2 Por tema
+
+| Tema | Posts | Mediana de interações | Leitura |
+|---|---:|---:|---|
+| **Pessoal / bastidor da vida dela** | 3 | **345** | Os melhores do perfil |
+| Lipedema × menopausa | 1 | 312 | Nicho com muita dúvida (24 comentários) |
+| Longevidade ("envelhecer é privilégio") | 3 | 180 | Bom, quando é inspiracional |
+| **Terapia hormonal técnica** (estradiol, estriol, transdérmica, trombose) | 5 | **153** | Gera **mais comentários** (32, 11, 6, 5, 4), quase todos perguntas |
+| Perimenopausa | 2 | 127 | Médio |
+| **Sintomas em carrossel** | 6 | **111** | Abaixo da média. "Menopausa não é sinônimo de calorão" teve só 25. |
+| Nutrição / bastidor de congresso | 2 | 87 | Fraco |
+| Saúde mental (texto) | 2 | 70 | Fraco em carrossel |
+| **Data comemorativa / celebridade / DIU** | 3 | **27–60** | **Os piores** |
+
+### 4.3 Top 5 e bottom 5
+
+| # | Post | Formato | Views | Curtidas + coment. | Índice | Quando |
 |---|---|---|---:|---:|---:|---|
-| 1 | **Dra. Caroline Alonso** ([@dra.carolinealonso](https://www.instagram.com/dra.carolinealonso/)) | Rio de Janeiro | **~133 mil** | ~1.072 | **~124** | Reposição hormonal + **rejuvenescimento íntimo** |
-| 2 | **Dra. Ana Claudia Siqueira** ([@dra.anaclaudiasiqueira](https://www.instagram.com/dra.anaclaudiasiqueira/)) | Porto Alegre | **~97 mil** | ~1.297 | **~75** | Climatério, menopausa, **envelhecimento saudável** |
-| 3 | Dra. Carolina Arrabal ([@dra.carolinaarrabal](https://www.instagram.com/dra.carolinaarrabal/)) | São Paulo | ~55 mil | n/d | n/d | Menopausa, **laser íntimo**, terapia hormonal |
-| 4 | Dra. Thatìanê Nacif ([@dratatianenacif](https://www.instagram.com/dratatianenacif/)) | MG | ~43 mil | n/d | n/d | Climatério, menopausa, terapias hormonais, endometriose |
-| 5 | Dra. Fernanda Tourinho ([@fernanda.tourinho.gineco](https://www.instagram.com/fernanda.tourinho.gineco/)) | n/d | ~23 mil | n/d | n/d | Reposição hormonal + **estética íntima** |
-| 6 | Dra. Regina Rebello ([@drareginarebello](https://www.instagram.com/drareginarebello/)) | n/d | ~23 mil | n/d | n/d | Menopausa e hormônios |
-| 7 | Dra. Maria Clara Amaral ([@dra.mariaclaraamaral](https://www.instagram.com/dra.mariaclaraamaral/)) | Montes Claros/MG | ~22 mil | n/d | n/d | Terapia hormonal, menopausa, endometriose, **lipedema** |
-| 8 | Dra. Ana Paula Linhares ([@anapaulalinhares](https://www.instagram.com/anapaulalinhares/)) | n/d | ~17 mil | ~3.020 | ~6 | Menopausa, saúde hormonal e **metabólica** |
-| 9 | Dra. Stephanie Hanchar ([@drastephanie.ginecologista](https://www.instagram.com/drastephanie.ginecologista/)) | n/d | ~15 mil | ~365 | ~41 | Ginecologia endócrina |
-| 10 | Dra. Raphaella Bristot ([@draraphaellabristot](https://www.instagram.com/draraphaellabristot/)) | Florianópolis | ~14 mil | ~1.697 | ~8 | Menopausa, DIU, implantes |
+| 🥇 | ["Vou ser sincera: tenho dificuldade imensa de desacelerar"](https://www.instagram.com/reel/DeXAPFaoUrI/) | Reel | 16,3 mil | 593 + 20 | **4,9×** | dom 12h |
+| 🥈 | ["Reposição transdérmica: absorção pode variar até 10x"](https://www.instagram.com/reel/Dd4122yIT2q/) | Reel | 14,9 mil | 341 + 32 | 3,0× | ter 19h |
+| 🥉 | ["Coisas que não entram em negociação: corpo, quem amo, comer bem"](https://www.instagram.com/p/DeHZqoLDNKQ/) | Foto | – | 340 + 5 | 2,8× | seg 12h |
+| 4 | ["Lipedema tende a piorar na menopausa"](https://www.instagram.com/reel/DdUzKrFoUNi/) | Reel | 8,0 mil | 288 + 24 | 2,5× | ter 19h |
+| 5 | ["Estriol não é sinônimo de reposição sistêmica"](https://www.instagram.com/reel/Dc1yu59oYWg/) | Reel | 10,3 mil | 234 + 11 | 2,0× | qui 18h |
+| … | | | | | | |
+| 26 | ["O que é perimenopausa"](https://www.instagram.com/p/DdUi7zFIyR8/) | Carrossel | – | 45 + 1 | 0,37× | ter 18h |
+| 27 | ["DIU na menopausa: quando retirar"](https://www.instagram.com/p/DeNMawil5tj/) | Carrossel | – | 32 + 3 | 0,28× | qua 18h |
+| 28 | ["Cenas da Menopausa, de Claudia Raia"](https://www.instagram.com/p/Dcjn1FnoBgB/) | Carrossel | – | 26 + 1 | 0,22× | qui 18h |
+| 29 | ["Se informar vs. se intoxicar emocionalmente"](https://www.instagram.com/p/DcelIaXkmeI/) | Carrossel | – | 25 + 1 | 0,21× | ter 19h |
+| 30 | ["Menopausa não é sinônimo de calorão"](https://www.instagram.com/p/Dct7SdsHxpE/) | Carrossel | – | 25 + 0 | 0,20× | seg 18h |
 
-**Concorrente local direta (sem número de seguidores obtido):** Dra. Luiza Schvartzman (Porto Alegre, membro da Sociedade Brasileira de Climatério). Ela disputa a mesma busca local, "ginecologista menopausa Porto Alegre".
+**Os 5 piores são todos carrosséis, e 4 deles foram postados às 18h.**
 
-**Outras referências do nicho** (com site, sem dado de Instagram obtido): Dra. Juliana Jansen (SC), Dra. Débora Recchi (SP), Dra. Fernanda Torras, Dra. Lidia Myung (integrativa). Um perfil não médico de comunidade, @querida_menopausa, tinha engajamento de apenas **0,1%** e média de **28 reações por post** segundo a Heepsy. Isso mostra que só falar de "menopausa" não basta: autoridade médica e formato fazem a diferença.
+### 4.4 Horários
 
-### 2.1 O que os números dizem
+| Horário (Brasília) | Posts | Mediana de interações |
+|---|---:|---:|
+| **12h** | 10 | **175** |
+| 14h–16h | 3 | 166–207 |
+| **18h** | 8 | **70** ⚠️ |
+| 19h–20h (Reels) | 7 | 132–143 |
 
-1. **O nicho é concentrado no topo.** Somando os 10 perfis, temos cerca de 442 mil seguidores. As 2 maiores (Alonso e Siqueira) somam cerca de 230 mil, **52% do total**. A Dra. Ana Claudia sozinha tem cerca de 22%.
-2. **A líder cresce com "hormônio + estética".** Três dos cinco maiores perfis (Alonso, Arrabal e Tourinho) combinam terapia hormonal com **estética/rejuvenescimento íntimo**. Essa é a promessa mais "vendável" do nicho: resultado visível, autoestima e procedimento pago. A Dra. Ana Claudia ocupa o outro território, **saúde e envelhecimento saudável**, mais científico e de longo prazo.
-3. **Eficiência por post:**
-   - A Dra. Caroline Alonso converte cerca de **124 seguidores por post** publicado, contra cerca de **75** da Dra. Ana Claudia. Com **17% menos posts**, tem **37% mais seguidores**. Isso sugere que cada conteúdo dela alcança mais não seguidores, provavelmente por **Reels com gancho de transformação/estética** e mais anúncios.
-   - Perfis com milhares de posts e poucos seguidores (Linhares com cerca de 6 por post e Bristot com cerca de 8) mostram que **volume sem formato de descoberta não gera crescimento**.
-   - *Ressalva:* "seguidores por post" é um indicador grosseiro e acumulado. Ele não separa crescimento orgânico de anúncios nem posts antigos de recentes.
-4. **Há espaço entre 100 mil e 200 mil.** Nenhuma ginecologista focada em menopausa no levantamento passou de cerca de 133 mil. Quem consolidar a posição de "**a referência em menopausa baseada em evidência**" no Brasil pode ocupar esse espaço.
+- **O slot das 18h é o pior**, cerca de 60% abaixo do meio-dia. É o horário de deslocamento e de tarefas domésticas do público 40+.
+- **12h e o começo da tarde** funcionam bem para carrossel e foto. Os Reels às 19h–20h vão bem.
+- A janela da manhã cedo (6h30–8h) **não foi testada** e continua como hipótese.
+- Por dia, a amostra é pequena demais para concluir, mas domingo e sábado aparecem acima da média (n=4).
 
-### 2.2 Contexto de demanda
+### 4.5 O que dizem os comentários
 
-- A menopausa virou pauta nacional depois que figuras públicas falaram abertamente sobre o tema. Um exemplo é a atriz **Cláudia Raia**, cuja fala gerou debate nas redes e entre especialistas.
-- Há demanda reprimida: um estudo brasileiro (Maringá) encontrou apenas **18,4%** das mulheres usando terapia hormonal.
-- Há um debate técnico em curso sobre riscos e benefícios da terapia hormonal. O CFF, por exemplo, lembra que a relação risco-benefício é desfavorável quando a terapia começa mais de 10 anos após a menopausa. **Conteúdo que explica a "janela de oportunidade" com clareza é diferencial de autoridade.**
+Nos Reels de terapia hormonal, os comentários são **perguntas práticas**, e cada uma pode virar um Reel:
+- "Onde é apropriado colocar o adesivo?" (7 respostas)
+- "Sempre apliquei na parte interna da coxa, qual o melhor lugar?"
+- "E qual é o indicado para não dar os picos?"
+- "E implante de estrogênio e testosterona?"
+- Relatos com marcas (Systen, Oestrogel, Estreva, Utrogestan) e reações ("tive muita retenção com o gel")
+- "Faço tratamento para perimenopausa e notei a piora do meu lipedema"
 
 ---
 
-## 3. Diagnóstico (SWOT)
+## 5. Hipóteses: o que os dados confirmaram
 
-| Forças | Fraquezas (prováveis, validar com dados) |
+| # | Hipótese (relatório anterior) | Veredito | Evidência |
+|---|---|---|---|
+| H1 | Gancho de sintoma específico supera tema genérico | **Parcial** | Em **Reel** funciona ("barriga estufar do nada": 13,5 mil views; o viral de Alonso sobre sintomas aos 40 teve 1,2 mi). Em **carrossel** de sintomas, não (mediana 111, piores posts). |
+| H2 | Mito/verdade sobre terapia hormonal gera mais comentários | ✅ **Confirmada** | Os Reels de terapia hormonal concentram os comentários (32, 11, 6...), quase todos perguntas |
+| H3 | Carrossel-checklist é o mais salvo | ❓ **Não verificável** | Salvamentos são privados. Em curtidas, carrossel rende 0,81× a mediana. Conferir no Insights. |
+| H4 | Sexualidade/libido tem alto alcance | ❓ **Lacuna** | **Nenhum post sobre libido ou sexualidade em 30**, apesar do destaque "Libido X ACO". Em Arrabal, "dor na relação" teve 19,7 mil views. |
+| H5 | Estética íntima puxa mais seguidores | ❌ **Não confirmada** | Arrabal (laser) tem alcance alto mas conversão baixa. Alonso (estética íntima) tem o engajamento mais fraco do grupo. |
+| H6 | Institucional e datas comemorativas têm o pior desempenho | ✅ **Confirmada** | Independência: 60. Claudia Raia: 27. Congresso: 80. Todos abaixo da mediana. |
+| H7 | Experiência pessoal retém mais | ✅✅ **Confirmada com força** | Os 3 posts pessoais têm mediana de **345 (2,8×)**, e o post nº 1 do perfil é pessoal |
+| H8 | Público 40+ responde melhor cedo e à noite | **Parcial** | Noite (19h–20h) ok, **18h ruim, 12h ótimo**. Manhã cedo não testada. |
+
+---
+
+## 6. Diagnóstico
+
+| Forças (comprovadas) | Fraquezas (comprovadas) |
 |---|---|
-| Cerca de 97 mil seguidores, 2º maior perfil do nicho | Eficiência por post 40% menor que a líder |
-| Funil completo: e-book, site/blog, YouTube e consulta online | YouTube (cerca de 19 mil) com 1/5 da base do Instagram, ou seja, pouco cruzamento |
-| CRM/RQE visíveis, credencial forte | Território "envelhecimento saudável" é menos "clicável" que "estética íntima" |
-| Mais de 25 anos de prática e uma história de carreira marcante | Nome parecido com o de uma médica homônima no RS |
-| Atendimento online, mercado nacional | Possível excesso de conteúdo estático/institucional (comum em perfis com mais de 1.200 posts antigos) |
+| Melhor engajamento entre as médicas do nicho (0,098%) | Alcance de Reels baixo: 5,7% da base, contra 12,7% de Arrabal |
+| Comunidade que pergunta: terapia hormonal gera dúvidas reais | **Nenhum viral**: o maior Reel tem 26 mil views, contra 500 mil a 1,2 mi dos concorrentes |
+| Posts pessoais com 2,8× a mediana: a pessoa dela é o ativo | 58% do feed em carrossel, o formato mais fraco dela |
+| Ritmo consistente (4,2 posts por semana) | Slot das 18h com 8 posts e mediana de 70 |
+| CRM/RQE, e-book, YouTube, consulta online | Zero collabs. Zero conteúdo de sexualidade. Fixados antigos (2023/2024). |
 
 | Oportunidades | Ameaças |
 |---|---|
-| Nenhum perfil médico de menopausa passou de cerca de 133 mil: posição de "nº 1 do Brasil" em aberto | Concorrentes com apelo estético crescem mais rápido |
-| **Perimenopausa (38–50 anos)** é público maior, mais jovem e mais ativo no Instagram | Desinformação e "gurus" de hormônio sem formação médica |
-| Polêmicas recorrentes (implantes hormonais, "chip da beleza", bioidênticos, celebridades) | Mudanças regulatórias do CFM sobre publicidade e implantes |
-| Collabs com nutri, educador físico, psicóloga e dermatologista 40+ | Saturação de conteúdo genérico sobre "sintomas da menopausa" |
-| Imprensa nacional busca especialistas no tema | Dependência de um único canal (Instagram) |
+| **Formato "pergunta de paciente"** (viral de Arrabal) usando as perguntas reais dos comentários dela | Concorrentes com bases grandes impulsionando Reels |
+| **Collab com médicos** (melhor Reel recente de Igor) | Polêmica sobre implantes (Igor já ocupa "bizarrices dos implantes") |
+| Perimenopausa "aos 40" (viral de Alonso, 1,2 mi) | Audiência "fria" se o crescimento vier só de viral |
+| Lipedema × hormônio (312 interações num tema pouco explorado) | |
 
 ---
 
-## 4. Comportamento de posts: hipóteses de padrão do nicho
+## 7. Plano de crescimento (12 meses)
 
-Pelo que se observa no nicho de menopausa e nos padrões gerais do Instagram (ver guia complementar, seções 4, 6 e 9), estas são as hipóteses que **a auditoria da seção 6 deve confirmar ou derrubar** com os números dela e dos concorrentes:
+### 7.1 Metas
 
-| # | Hipótese | Por que é provável | Métrica que confirma |
-|---|---|---|---|
-| H1 | **Reels com sintoma específico no gancho** ("calor à noite", "acordo às 3 da manhã", "névoa mental", "engordei sem mudar nada") superam Reels de tema genérico ("o que é menopausa") | A paciente se reconhece no sintoma e envia para a amiga ou irmã | Visualizações e envios por alcance |
-| H2 | **Mito vs. verdade sobre terapia hormonal** ("reposição dá câncer?") é o tema com mais comentários | Medo e polêmica geram conversa | Comentários por post |
-| H3 | **Carrossel-checklist** ("17 sintomas da perimenopausa que ninguém te conta") é o post mais salvo | Material de referência para levar à consulta | Salvamentos |
-| H4 | Posts sobre **libido, ressecamento e sexualidade após os 40** têm alto alcance e baixo comentário público (vergonha), mas muitos envios e DMs | Tabu | Envios e DMs vs. comentários |
-| H5 | Concorrentes com **"antes e depois"** e estética íntima puxam mais seguidores novos por post | Transformação visual | Seguidores ganhos por post |
-| H6 | Posts **institucionais, de data comemorativa e frases** têm o pior desempenho | Nada para salvar nem enviar | Taxa de engajamento abaixo da média do perfil |
-| H7 | Vídeos em que **a própria médica conta experiência de consultório** ("uma paciente de 47 anos me disse...") retêm mais do que leitura de roteiro | Narrativa | Retenção aos 3 s e tempo médio assistido |
-| H8 | O público 40+ responde melhor **cedo (6h30–8h30)** e **na noite (20h–22h)** do que no almoço | Rotina da mulher 40+ que trabalha. **Hipótese a validar no Insights.** | Alcance por horário |
+| Indicador | Hoje | 3 meses | 12 meses |
+|---|---:|---:|---:|
+| Seguidores | 126 mil | 135 mil | **165 mil** (+31%, passa Alonso e Igor) |
+| Mediana de views dos Reels | 7,1 mil | 12 mil | **20 mil** |
+| Views / seguidores (Reels) | 5,7% | 9% | 12% |
+| Mediana de interações por post | 124 | 150 | 200 |
+| Reels com mais de 100 mil views | 0 | 1 | 4+ (1 por trimestre) |
+| % do feed em Reels | 39% | 60% | 65% |
 
----
+### 7.2 Mudanças imediatas (próximas 2 semanas)
 
-## 5. Metas de crescimento (12 meses)
+1. **Acabar com o slot das 18h.** Carrossel e foto passam para **12h**, e Reels para **19h30–20h30**. Testar 2 Reels às **7h** nas próximas 4 semanas para validar a manhã.
+2. **Inverter o mix:** de 5 para **3 Reels por semana**, de 2–3 para **1–2 carrosséis por semana**, mais 1 post pessoal por semana.
+3. **Trocar os fixados de 2023/2024** por:
+   1. um Reel de apresentação ("Fiz partos por 20 anos. Hoje cuido da mulher que vem depois");
+   2. o melhor Reel técnico (transdérmica, 14,9 mil);
+   3. um Reel novo de perimenopausa no formato do viral de Alonso.
+4. **Cortar carrosséis de sintoma genérico, datas e celebridades.** Quando o tema for sintoma, fazer em **Reel**, com ela falando.
+5. **Responder perguntas de comentário em vídeo** (recurso "responder com Reel"), começando por "Onde colocar o adesivo de estradiol?".
 
-A base é de cerca de 97 mil seguidores em outubro de 2026. São três cenários, e o plano da seção 7 mira o **cenário-alvo**.
+### 7.3 Pilares (mix para 5 posts por semana)
 
-| Cenário | Seguidores em out/2027 | Crescimento | Ritmo mensal | Requisitos |
-|---|---:|---:|---:|---|
-| Conservador | 115 mil | +18% | ~1,5 mil/mês | Manter a frequência atual e incluir 2 Reels por semana com gancho de sintoma |
-| **Alvo** | **140 mil** | **+44%** | **~3,6 mil/mês** | Plano completo: 4 Reels + 2 carrosséis por semana, 1 collab por mês, Trial Reels, impulsionamento leve |
-| Agressivo | 180 mil+ | +85% | ~7 mil/mês | Alvo + 1 a 2 Reels virais por trimestre, imprensa nacional, mídia paga contínua |
+| Pilar | Formato | Freq. | Base nos dados |
+|---|---|---:|---|
+| **TRH sem mito, respondendo dúvidas reais** | Reel 45–60 s | 2 por semana | 153 de mediana e o maior volume de comentários |
+| **Sintoma + identificação** ("você tem 42 e...") | Reel 20–35 s | 1 por semana | Viral de Alonso (1,2 mi), "barriga estufar" (13,5 mil) |
+| **Ela, pessoa** (rotina, valores, desacelerar, comida, família) | Reel ou foto | 1 por semana | **345 de mediana (2,8×)** |
+| **Guia salvável** (adesivo vs. gel, exames 40/50/60, lipedema e TRH) | Carrossel | 1 por semana | Formato de salvamento. Validar no Insights. |
+| **Sexualidade 40+** (libido, ressecamento, dor) | Reel | 2 por mês | Lacuna no perfil. Concorrente com 19,7 mil views. |
+| **Collab** com médica ou médico de outra especialidade | Reel collab | 1 por mês | Melhor Reel recente de Igor (51,9 mil, 1,5 mil curtidas) |
 
-**Metas de negócio (mais importantes que seguidores):**
+### 7.4 Roteiros prontos (baseados nos comentários e nos virais)
 
-| KPI | Linha de base | Meta 12 meses |
-|---|---|---|
-| Downloads do e-book por mês | medir no mês 1 | +100% |
-| Consultas online originadas do Instagram por mês | medir no mês 1 (pergunta "como nos conheceu?") | +50% |
-| Inscritos no YouTube | ~19,4 mil | 35 mil |
-| Lista de e-mail/WhatsApp (leads do e-book) | medir | 5 mil+ |
-| Envios por alcance (média dos Reels) | medir | acima de 1,5% |
-| Salvamentos por alcance (média dos carrosséis) | medir | acima de 2% |
+1. **"Onde colocar o adesivo de estradiol? 90% coloca errado."** Responde aos comentários do Reel transdérmico.
+2. **"Gel, adesivo ou spray: por que a sua amiga se dá bem e você não."** Gancho: absorção até 10x.
+3. **"Tenho 42 anos, durmo mal, estou irritada e esgotada. É a cabeça?"** Formato de identificação do viral de 1,2 mi.
+4. **"'Doutora, isso aqui é bom pra menopausa?'"** Série em que ela reage a produtos e suplementos virais, no formato do viral de 864 mil.
+5. **"Tive trombose. Nunca vou poder fazer reposição?"** Regravar o tema de 5 mil views com gancho de pergunta direta.
+6. **"Implante hormonal: o que eu respondo quando a paciente pede."** Pergunta frequente nos comentários.
+7. **"Lipedema piorou na perimenopausa? Não é coincidência."** Sequência do post de 312 interações.
+8. **"Eu também tenho dificuldade de desacelerar. Na menopausa isso cobra mais caro."** Une o pessoal (nº 1) com o técnico.
+9. **"Libido zerou depois dos 45. Não é falta de amor."** Abre o pilar de sexualidade.
+10. **"3 coisas que eu, ginecologista da menopausa, faço todo dia pela minha longevidade."** Pessoal + técnico + salvável.
 
----
+### 7.5 Collabs sugeridas (prioridade)
 
-## 6. Auditoria de posts (fazer na semana 1)
+1. **Médica ou médico de outra cidade no mesmo nicho**, para troca de audiência com o mesmo público. Exemplos: Dr. Igor Padovesi, ou nomes com quem ele já fez collab.
+2. **Angiologista ou cirurgiã vascular**: lipedema × hormônios.
+3. **Endocrinologista ou nutróloga**: peso e resistência insulínica na menopausa.
+4. **Fisioterapeuta pélvica**: incontinência e dor na relação.
+5. **Educador físico 40+**: força e longevidade (tema do viral de 496 mil de Nacif).
 
-### 6.1 O que coletar
+### 7.6 Impulsionamento
 
-Use a planilha [`dados/auditoria-posts-template.csv`](./dados/auditoria-posts-template.csv):
-
-- **Dra. Ana Claudia:** últimos 30 posts, com Insights completos (alcance, salvamentos, envios, retenção). A própria médica ou a social media exporta em *Painel profissional → Insights → Conteúdo*.
-- **3 concorrentes** (sugestão: Caroline Alonso, Carolina Arrabal e Thatìanê Nacif): últimos 20 posts com dados públicos (curtidas, comentários e visualizações de Reels).
-
-### 6.2 Como calcular
-
-```
-Taxa de engajamento pública  = (curtidas + comentários) / seguidores × 100
-Taxa por visualização (Reels) = (curtidas + comentários) / visualizações × 100
-Envios por alcance            = envios / alcance × 100              (só perfil próprio)
-Salvamentos por alcance       = salvamentos / alcance × 100          (só perfil próprio)
-Índice do post                = métrica do post / mediana do perfil  (>1,5 = vencedor; <0,5 = perdedor)
-```
-
-Compare cada post com a **mediana do próprio perfil**, não com outros perfis. Depois compare os perfis entre si pela mediana.
-
-### 6.3 Perguntas que a auditoria responde
-
-1. Qual **formato** (Reel, carrossel, foto) tem a maior mediana de engajamento para ela? E para os concorrentes?
-2. Quais **5 temas** estão no topo e quais 5 estão no fundo?
-3. Qual **tipo de gancho** (sintoma, mito, polêmica, história, lista) vence?
-4. **Duração** dos Reels vencedores?
-5. **Dia e horário** dos 5 melhores posts?
-6. Quantos dos 30 posts são **institucionais/datas** e como eles performam?
-7. Os concorrentes que crescem mais usam **antes e depois, estética ou anúncios**?
+- Impulsionar **só Reels que já passaram de 1,5× a mediana orgânica** (hoje, acima de cerca de 11 mil views ou 185 interações).
+- Público: mulheres de 38 a 58 anos, Brasil (consulta online) + Porto Alegre e região metropolitana.
+- Objetivo: **visitas ao perfil** ou download do e-book, nunca "curtidas".
+- O caso Arrabal (57 mil views e 187 curtidas) mostra o risco de alcance sem conversão.
 
 ---
 
-## 7. Plano de crescimento
+## 8. Calendário das próximas 4 semanas
 
-### 7.1 Posicionamento
+| Semana | Seg 12h | Ter 19h30 | Qua 7h (teste) | Qui 19h30 | Sáb/Dom 12h |
+|---|---|---|---|---|---|
+| 1 | Carrossel: adesivo vs. gel vs. spray | Reel: "Onde colocar o adesivo?" | Reel: "Tenho 42, durmo mal..." | Reel: implante hormonal | Pessoal: rotina de domingo |
+| 2 | Carrossel: lipedema e TRH (guia) | Reel: "'Doutora, isso é bom pra menopausa?'" #1 | Reel: libido após os 45 | **Collab** (angiologista: lipedema) | Pessoal: "desacelerar" parte 2 |
+| 3 | Carrossel: exames por idade 40/50/60 | Reel: trombose e reposição (regravação) | Reel: palpitação à noite | Reel: resposta a comentário | Pessoal: comida e prazer |
+| 4 | Carrossel: perimenopausa "checklist" | Reel: "'Doutora, isso é bom...'" #2 | Reel: ressecamento/dor na relação | Reel: "Fiz partos por 20 anos..." (novo fixado) | Pessoal + chamada para o e-book |
 
-> **"A ginecologista que explica a menopausa com ciência e sem medo, para você chegar aos 50, 60 e 70 com energia."**
-
-- **Território próprio:** menopausa **baseada em evidência** e **longevidade feminina**. Não competir de frente em estética íntima. Em vez disso, ser a voz técnica que esclarece (ex.: "o que é verdade sobre implantes hormonais").
-- **Ampliar para a perimenopausa (38–50 anos):** público mais jovem, mais ativo no Instagram e que ainda **não sabe que está na transição**. É o maior vetor de crescimento.
-- **História de origem:** "Fiz partos por 20 anos. Hoje cuido da mulher que vem depois." Fixar um Reel com essa narrativa.
-
-### 7.2 Pilares de conteúdo (mix semanal)
-
-| Pilar | % do feed | Exemplos de pauta |
-|---|---:|---|
-| **1. Sintomas que você não sabia que eram hormonais** (descoberta) | 30% | Insônia às 3h, palpitação, dor articular, ansiedade nova aos 45, queda de cabelo, gordura abdominal, zumbido, olho seco, coceira na pele |
-| **2. Terapia hormonal sem medo e sem mito** (autoridade) | 25% | "Reposição dá câncer de mama?", janela de oportunidade, gel x adesivo x comprimido, bioidênticos, implantes hormonais: o que diz a evidência, quem **não** pode usar |
-| **3. Longevidade 40+** (diferencial) | 20% | Massa muscular e menopausa, osteoporose, coração da mulher após os 50, sono, exames por idade 40/50/60, collabs com nutri e educador físico |
-| **4. Sexualidade e autoestima 40+** (envio) | 15% | Libido, ressecamento, dor na relação, relacionamento na menopausa, "não é frescura" |
-| **5. Bastidores e prova social** (conversão) | 10% | Como é a consulta online, depoimentos (com consentimento), rotina, congresso, perguntas de pacientes |
-
-### 7.3 Mix de formatos e frequência
-
-| Formato | Frequência | Papel | Detalhe |
-|---|---|---|---|
-| **Reels** | **4 por semana** | Crescimento | 30–60 s. Gancho de **sintoma** nos 2 primeiros segundos. Legenda embutida em fonte grande (público 40+). 1 por semana vai como **Trial Reel** para testar tema. |
-| **Carrossel** | **2 por semana** | Salvamento e autoridade | Checklists e comparativos. Capa com número ("12 sinais..."). Última lâmina: "baixe o e-book" e "salve para levar à consulta". |
-| **Stories** | Diário (5–8) | Relacionamento e conversão | Enquete "você sente isso?", quiz de mito/verdade, **caixinha semanal às quartas à noite**, link de agendamento online toda sexta |
-| **Collab** | 1 por mês | Nova audiência | Nutri (peso na menopausa), educador físico (força 40+), psicóloga (humor), dermato (pele 40+), mastologista (Outubro Rosa), outra ginecologista de outra região |
-| **Live** | 1 por mês | Comunidade | "Plantão de dúvidas da menopausa", depois recortada em 3–5 Reels |
-| **YouTube** | 2 por mês | Busca e longo prazo | Vídeo longo (8–15 min) por tema-pilar + Shorts reaproveitando os Reels. Chamar para o YouTube nos stories. |
-
-### 7.4 Horários (ponto de partida para teste A/B, 4 semanas)
-
-| Janela | Dias | Uso |
-|---|---|---|
-| **06h30–08h00** | Seg, Qua, Sex | Reels (hipótese H8: mulher 40+ ativa cedo) |
-| **12h00–13h00** | Ter, Qui | Carrosséis |
-| **20h00–21h30** | Seg a Qui | Reels alternados + caixinha (quarta) |
-| Domingo 19h–20h | Opcional | Reel leve/reflexivo ("sua semana começa com você") |
-
-Depois de 4 semanas, mantenha as **2 janelas com maior alcance médio** e corte a pior.
-
-### 7.5 Banco de ganchos para o nicho (prontos para gravar)
-
-1. "Você acorda todo dia às 3 da manhã? Pode ser hormônio, e não estresse."
-2. "Se você tem 42 anos e está mais ansiosa do que nunca, assiste isso."
-3. "Seu ginecologista disse que 'é da idade'? Isso tem tratamento."
-4. "Reposição hormonal dá câncer? A resposta curta é: depende, e eu explico."
-5. "3 sinais de perimenopausa que aparecem antes da menstruação mudar."
-6. "Engordei 5 kg sem mudar nada. O que a menopausa tem a ver com isso."
-7. "Implante hormonal: o que eu falo para as minhas pacientes."
-8. "Dor nas articulações aos 48? Pouca gente liga isso ao estrogênio."
-9. "Fiz partos por 20 anos. Hoje cuido da mulher que vem depois. Eis o porquê."
-10. "O exame que toda mulher de 50 deveria pedir e quase ninguém pede."
-11. "Libido zerou depois dos 45? Não é frescura nem falta de amor."
-12. "Menopausa precoce: quando a menstruação para antes dos 40."
-
-### 7.6 Funil de conversão
-
-```
-Reel (descoberta) → Perfil (bio + destaques + 3 fixados) → E-book (Linktree/palavra-chave no Direct)
-      → Lista WhatsApp/e-mail (sequência de 5 mensagens educativas) → Consulta online/presencial
-```
-
-- **Automação no Direct:** "Comente **MENOPAUSA** que eu te envio o e-book" nos Reels de sintoma. Gera comentários (sinal de algoritmo) e leads.
-- **Destaques fixos:** Comece aqui · Consulta online · Terapia hormonal · Sintomas · Depoimentos · E-book · Imprensa.
-- **3 posts fixados:** (1) história de origem, (2) carrossel mais salvo, (3) "como funciona a consulta online".
-- **Bio:** incluir a palavra-chave "Perimenopausa" e o termo "Consulta online para todo o Brasil".
-
-### 7.7 Autoridade e marca fora do Instagram
-
-- **Imprensa:** montar um kit (bio curta, foto, 5 temas com opinião) e oferecer a veículos quando a menopausa virar notícia (celebridades, novas diretrizes, Dia Mundial da Menopausa em 18/10).
-- **Diferenciação da homônima:** padronizar "**Dra. Ana Claudia Siqueira | Menopausa**" no Google Perfil da Empresa, Doctoralia, YouTube e site. Isso evita perder busca para a Dra. Ana Claudia *Santiago* Siqueira (Montenegro/RS).
-- **SEO local e nacional:** posts do blog com os mesmos temas dos Reels mais vistos ("insônia na menopausa", "reposição hormonal Porto Alegre").
-- **Sociedades:** participação em eventos e conteúdo da SOBRAC/Febrasgo como prova de autoridade.
-
-### 7.8 Mídia paga (opcional, cenário alvo)
-
-- R$ 30–50 por dia para impulsionar **apenas os Reels que já performaram acima de 1,5× a mediana** orgânica.
-- Público: mulheres de 38 a 60 anos, Brasil (consulta online) + raio de 30 km de Porto Alegre (presencial).
-- Objetivo: visitas ao perfil ou leads do e-book. Não usar "curtidas".
-- Seguir a Res. CFM 2.336/2023: sem promessa de resultado, com CRM/RQE na peça.
+Stories diários: enquete do tema do dia, caixinha às quartas à noite e link de agendamento às sextas.
 
 ---
 
-## 8. Cronograma de 90 dias
+## 9. Painel de acompanhamento
 
-| Semana | Entregas |
-|---|---|
-| **1** | Auditoria dos 30 posts + 3 concorrentes (seção 6). Exportar Insights (horários e público). Medir linha de base dos KPIs. |
-| **2** | Ajustar bio, destaques e fixados. Gravar o Reel de história de origem. Configurar automação "MENOPAUSA" → e-book. Roteirizar 16 Reels com o banco de ganchos. |
-| **3–4** | Rodar o novo mix (4 Reels + 2 carrosséis por semana). Teste A/B de horários. 2 Trial Reels. Primeira caixinha semanal. |
-| **5** | 1ª revisão: top 5 e bottom 5. Cortar temas e formatos perdedores. Planejar a 1ª collab. |
-| **6–8** | Collab nº 1 + live nº 1 (recortada em Reels). 2 vídeos no YouTube. Iniciar mídia paga nos vencedores. |
-| **9** | 2ª revisão de métricas. Kit de imprensa pronto. |
-| **10–12** | Collab nº 2. Série temática ("30 dias de perimenopausa" ou "Mitos da reposição"). Revisão trimestral: comparar com metas e com a evolução dos concorrentes. |
+| Métrica | Base (15/10/2026) | Mês 1 | Mês 2 | Mês 3 |
+|---|---:|---|---|---|
+| Seguidores | 126.000 | | | |
+| Mediana de views dos Reels | 7.127 | | | |
+| Mediana de interações por post | 124 | | | |
+| % Reels no feed | 39% | | | |
+| Posts às 18h | 8 de 30 | 0 | 0 | 0 |
+| Collabs no mês | 0 | 1 | 1 | 1 |
+| Salvamentos por alcance (carrossel, Insights) | medir | | | |
+| Envios por alcance (Reels, Insights) | medir | | | |
+| Downloads do e-book | medir | | | |
+| Consultas vindas do Instagram | medir | | | |
+| Igor Padovesi | 169.000 | | | |
+| Caroline Alonso | 159.000 | | | |
+| Carolina Arrabal | 128.000 | | | |
+| Thatìanê Nacif | 119.000 | | | |
 
----
-
-## 9. Painel mensal (acompanhar sempre)
-
-| Métrica | Mês 0 | Mês 1 | Mês 2 | Mês 3 |
-|---|---|---|---|---|
-| Seguidores Instagram | ~97.000 | | | |
-| Seguidores ganhos no mês | | | | |
-| Mediana de visualizações dos Reels | | | | |
-| Envios por alcance (Reels) | | | | |
-| Salvamentos por alcance (carrosséis) | | | | |
-| Downloads do e-book | | | | |
-| Consultas originadas do Instagram | | | | |
-| Inscritos no YouTube | ~19.400 | | | |
-| Concorrente: Caroline Alonso | ~133.000 | | | |
-| Concorrente: Carolina Arrabal | ~55.000 | | | |
-| Concorrente: Thatìanê Nacif | ~43.000 | | | |
-
----
-
-## 10. Próximo passo para fechar os números de post
-
-Para transformar as hipóteses da seção 4 em ranking real de temas, formatos e horários, envie **uma** destas opções:
-
-1. **Prints ou export do Insights** dos últimos 30 posts (o ideal, porque inclui alcance, envios e salvamentos), ou
-2. A planilha [`dados/auditoria-posts-template.csv`](./dados/auditoria-posts-template.csv) preenchida, ou
-3. Acesso a uma sessão com navegador logado no Instagram (Claude in Chrome / navegador integrado do app desktop), para coletar os dados públicos dela e dos concorrentes automaticamente.
-
-Com isso, a análise devolve: ranking de temas e formatos, melhores horários reais, comparação de engajamento contra cada concorrente e o calendário dos próximos 30 dias já preenchido.
+**Próximo passo para fechar as lacunas:** exportar do Insights da própria conta os **salvamentos, envios e alcance** dos 30 posts. Isso responde à H3 (carrossel salva mais?) e mostra os horários reais de pico dos seguidores.
 
 ---
 
 ## Fontes
 
-**Perfil analisado**
-- [Instagram @dra.anaclaudiasiqueira](https://www.instagram.com/dra.anaclaudiasiqueira/)
-- [Site Dra. Ana Claudia Siqueira](https://draanaclaudiasiqueira.com.br/) · [Página "Dra. Ana Cláudia"](https://www.draanaclaudiasiqueira.com.br/dra-ana-claudia/)
-- [YouTube Dra. Ana Claudia Siqueira](https://www.youtube.com/channel/UCC_xoy6APCTvyplog3Ug5FQ)
-- [Linktree](https://linktr.ee/anaclaudiasiqueira) · [Facebook](https://www.facebook.com/draanaclaudiasiqueira/)
-- Homônima: [Doctoralia, Dra. Ana Claudia Santiago Siqueira (Montenegro)](https://www.doctoralia.com.br/ana-claudia-santiago-siqueira/ginecologista/montenegro)
-
-**Concorrentes**
-- [@dra.carolinealonso](https://www.instagram.com/dra.carolinealonso/) · [@dra.carolinaarrabal](https://www.instagram.com/dra.carolinaarrabal/) · [@dratatianenacif](https://www.instagram.com/dratatianenacif/) · [@fernanda.tourinho.gineco](https://www.instagram.com/fernanda.tourinho.gineco/) · [@drareginarebello](https://www.instagram.com/drareginarebello/) · [@dra.mariaclaraamaral](https://www.instagram.com/dra.mariaclaraamaral/) · [@anapaulalinhares](https://www.instagram.com/anapaulalinhares/) · [@drastephanie.ginecologista](https://www.instagram.com/drastephanie.ginecologista/) · [@draraphaellabristot](https://www.instagram.com/draraphaellabristot/)
-- [Dra. Luiza Schvartzman](https://www.luizaschginecologia.com/) · [Dra. Juliana Jansen](https://www.drajulianajansen.com.br/) · [Dra. Débora Recchi](https://www.deborarecchi.com.br/reposicao-hormonal-na-menopausa-especialista-21D) · [Dra. Fernanda Torras](https://drafernandatorras.com.br/) · [Dra. Lidia Myung](https://www.dralidiamyung.com.br/climaterio-menopausa-reposicao-hormonal)
-- [Heepsy: @querida_menopausa](https://www.heepsy.com/instagram-profile/querida_menopausa)
-
-**Contexto**
-- [Metrópoles: Cláudia Raia e o debate sobre menopausa](https://www.metropoles.com/colunas/fabia-oliveira/claudia-raia-fala-sobre-menopausa-e-acende-debate-sobre-saude-hormonal)
-- [CFF: informações sobre terapia hormonal](https://site.cff.org.br/noticia/noticias-do-cff/17/04/2024/informacoes-sobre-terapia-hormonal)
-- [SciELO/ABEM: terapia de reposição hormonal na menopausa](https://www.scielo.br/j/abem/a/bnhD8LVvNT9P5yWFvhzfvBc/?lang=pt)
-- [HypeAuditor: como calcula a taxa de engajamento](https://help.hypeauditor.com/en/articles/2771955-what-is-engagement-rate-and-how-do-you-calculate-it)
-
-> Os números de seguidores e publicações vêm de prévias públicas indexadas e podem diferir alguns pontos percentuais dos valores atuais. Confira no perfil ao preencher o painel do mês 0.
+- Dados coletados diretamente em [@dra.anaclaudiasiqueira](https://www.instagram.com/dra.anaclaudiasiqueira/), [@dr.igorpadovesi](https://www.instagram.com/dr.igorpadovesi/), [@dra.carolinealonso](https://www.instagram.com/dra.carolinealonso/), [@dra.carolinaarrabal](https://www.instagram.com/dra.carolinaarrabal/) e [@dratatianenacif](https://www.instagram.com/dratatianenacif/) em 15/10/2026. Os links de cada post estão em [`dados/posts-coletados.csv`](./dados/posts-coletados.csv).
+- Contexto do nicho e regras do CFM: [ginecologistas-instagram-engajamento.md](./ginecologistas-instagram-engajamento.md).
